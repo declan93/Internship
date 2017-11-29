@@ -1,11 +1,13 @@
 ### Script to calculate strand asymmetry associated with transcription.
 ### Requirements:
 ### genes to be translated to same strand i.e, mutations occuring in genes on minus strand are reverse transcribed.
-### Haplotype predicted expression (high/low)
-### ref allele (strand that is transcribed)
-### alt allele (non-transcribed strand)
-### median expression value from GTEx data or GEUVADIS
-### Number of tissues associated with cis acting eQTL. 
+### Input file contains:
+#### Haplotype predicted expression (high/low)
+#### ref allele (strand that is transcribed)
+#### alt allele (non-transcribed strand)
+#### median expression value from GTEx data or GEUVADIS
+#### Number of tissues associated with cis acting eQTL. 
+### usage python Strand_asymmetry.py input_file expression_threshold(float) minimun_tissue(int)
 
 import sys, re
 from collections import Counter
